@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#009688"
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.user.eventsapp.event_activity">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/view2">
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view2">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="122dp"
+                android:layout_height="39dp"
+                android:spinnerMode="dropdown"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginEnd="17dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:isScrollContainer="false"
+            android:layout_below="@+id/layout1"
+            android:scrollIndicators="none">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/events"
+                android:src="@drawable/events"
+                android:background="#009688"
+                android:scaleType="fitXY"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plays"
+                android:src="@drawable/plays"
+                android:background="#009688"
+                android:scaleType="fitXY"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/music"
+                android:src="@drawable/music"
+                android:background="#009688"
+                android:scaleType="fitXY"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movies"
+                android:src="@drawable/movies"
+                android:background="#009688"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/containerLayout"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:padding="10dp"
+            android:paddingBottom="7dp"
+            />
+    </RelativeLayout>
+</ScrollView>

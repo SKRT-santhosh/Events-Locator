@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Events Locator</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_data">
+        <item>Hyderabad</item>
+        <item>Banglore</item>
+        <item>Banglore</item>
+        <item>Mumbai</item>
+        <item>kochi</item>
+        <item>Delhi</item>
+    </string-array>
+</resources>
